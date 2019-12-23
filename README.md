@@ -6,11 +6,13 @@ Note - I only tested this approach in a single-container Beanstalk environment. 
 
 ## Background
 
-This solution was based on the advice from: 
-https://stackoverflow.com/questions/28698061/setting-docker-container-hostname-on-elastic-beanstalk
+This solution was based on the advice from:
 
-An alternative approach would be to invoke a shell script in your Dockerfile via `CMD` or `ENTRYPOINT`, and then have that shell script set and export an environment variable. An example of this approach is available at: 
-https://github.com/matwerber1/aws-ec2-host-to-beanstalk-docker-container-env-var
+* https://stackoverflow.com/questions/28698061/setting-docker-container-hostname-on-elastic-beanstalk
+
+An alternative approach would be to invoke a shell script in your Dockerfile via `CMD` or `ENTRYPOINT`, and then have that shell script set and export an environment variable. An example of this approach is available at:
+
+* https://github.com/matwerber1/aws-ec2-host-to-beanstalk-docker-container-env-var
 
 ## Notes
 
